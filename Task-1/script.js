@@ -6,9 +6,8 @@ function validateLoginForm(event) {
     
 
     // Check if username and password 
-    if (username.trim() === 'suresh' && password.trim() === '1234') {
+    if (username.trim() === '' && password.trim() === '') {
         alert('Login Successfully...!');
-        window.location.href = "./new/sample.html";
         return;
     } else {
         alert('Invalid username or password');
@@ -34,7 +33,7 @@ function validateSignupForm(event) {
         alert('All fields are required');
         return;
     }
-    else if((name.trim() === 'suresh' || email.trim() === '123@gmail.com' || username.trim() === 'suresh' || password.trim() === '1234')){
+    else if((name.trim() === '' || email.trim() === '' || username.trim() === '' || password.trim() === '')){
         alert("Succsufully...!")
         location.href = "./index.html";
     }
