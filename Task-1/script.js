@@ -29,17 +29,16 @@ function validateSignupForm(event) {
     
       
     //Check if all fields are not empty
+    // If validation passes, you can submit the form or perform additional actions
     if (name.trim() === '' || email.trim() === '' || username.trim() === '' || password.trim() === '') {
-        alert('All fields are required');
+        alert('Succsufully...!');
         return;
     }
     else if((name.trim() === '' || email.trim() === '' || username.trim() === '' || password.trim() === '')){
-        alert("Succsufully...!")
-        location.href = "./index.html";
+        alert('All fields are required')
     }
-
-    // If validation passes, you can submit the form or perform additional actions
-    // alert('Signup successful!');
+    else{
+        alert('Something went wrong')
 }
 
 let front = document.querySelector('.front');
