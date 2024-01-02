@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Flip login Registration Form</title>
+    <style>
+        /* Add your custom styles here if needed */
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: -8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div  class="container front">
+        <div class="top">
+            <span>Log in</span>
+        </div>
+        <a href=""></a>
+        <div class="form">
+            <form id="loginForm" onsubmit="validateLoginForm(event)">
+                <div class="inputBox inputBoxFront">
+                    <label><i class="fa-solid fa-user"></i></label>
+                    <input type="text" placeholder="Username" class="input" id="loginUsername" required>
+                </div>
+                <div class="inputBox inputBoxFront">
+                    <label><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" placeholder="Password" class="input" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Log in</button>
+                <div class="user">New user? <span class="newUser">Sign Up</span></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- --------------------------- back ---------------------------------- -->
+
+    <div class="container back">
+        <div class="top topBack">
+            <span>Sign Up</span>
+        </div>
+        <div class="form formBack">
+            <form id="signupForm" onsubmit="validateSignupForm(event)">
+                <div class="inputBox inputBoxBack">
+                    <label><i class="fa-solid fa-t"></i></label>
+                    <input type="text" placeholder="Name" class="input" id="signupName" required>
+                </div>
+                <div class="inputBox inputBoxBack">
+                    <label><i class="fa-solid fa-envelope"></i></label>
+                    <input type="email" placeholder="Email id" class="input" id="signupEmail" required>
+                </div>
+                <div class="inputBox inputBoxBack">
+                    <label><i class="fa-solid fa-user"></i></label>
+                    <input type="text" placeholder="Username" class="input" id="signupUsername" required>
+                </div>
+                <div class="inputBox inputBoxback">
+                    <label><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" placeholder="Password" class="input" id="signupPassword" required>
+                </div>
+                
+                <button type="submit" class="btn btnBack">Sign Up</button>
+                <div class="user userBack">Existing user? <span class="existingUser">log In</span></div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+       </body>
+</html>
