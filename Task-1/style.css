@@ -17,7 +17,6 @@ body{
     width: 50vh;
     height: 60vh;
     border-radius: 3vh;
-    /* background: #94928e; */
     background: linear-gradient(to right, #2a2b2b, #9fa6af,);
     backdrop-filter: blur(20px);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
